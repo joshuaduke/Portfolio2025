@@ -6,23 +6,24 @@ import EmailIcon from "@mui/icons-material/Email";
 const Navbar = () => {
 	const github = GitHubIcon;
 	return (
-		<nav className="py-3">
-			<ul className="flex justify-end gap-3">
+		<nav className="py-3 fixed top-0 right-0 left-0 pr-6 bg-primary z-40">
+			<ul className="flex justify-end gap-3 icon-color">
 				<li className="">
 					<a href="https://github.com/joshuaduke" target="_blank">
-						<GitHubIcon />
+						<GitHubIcon sx={{ fontSize: 20 }} />
 					</a>
 				</li>
 				<li>
 					<a
 						href="https://www.linkedin.com/in/joshua-duke/"
 						target="_blank"
-					></a>
-					<LinkedInIcon />
+					>
+						<LinkedInIcon sx={{ fontSize: 20 }} />
+					</a>
 				</li>
 				<li>
 					<a href="mailto:joshuadukedev@gmail.com">
-						<EmailIcon />
+						<EmailIcon sx={{ fontSize: 20 }} />
 					</a>
 				</li>
 			</ul>

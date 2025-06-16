@@ -11,17 +11,18 @@ const JobDescription = (props) => {
 			aria-labelledby={`vertical-tab-${index}`}
 		>
 			{value === index && (
-				<div>
+				<div className="relative left-6">
 					<div>
-						<h2>{job.location}</h2>
-						<h4>
-							{job.title} @ {job.location}
+						{/* <h2>{job.location}</h2> */}
+						<h4 className="font-bold">
+							{job.title} @{" "}
+							<span className="text-accent">{job.location}</span>
 						</h4>
-						<p>
+						<p className="opacity-70">
 							{job.startDate} -{" "}
 							{job.endDate != "" ? job.endDate : "PRESENT"}
 						</p>
-						<ul className="list-disc">
+						<ul className="text-text list-disc px-8 relative top-4 marker:text-accent">
 							{job.description.map((item) => (
 								<li>{item}</li>
 							))}
@@ -29,11 +30,6 @@ const JobDescription = (props) => {
 					</div>
 				</div>
 			)}
-			{/* {value === index && (
-				<div>
-					<div>{children}</div>
-				</div>
-			)} */}
 		</div>
 	);
 };

@@ -5,6 +5,16 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import JobDescription from "./JobDescription";
+import { createTheme, ThemeProvider } from "@mui/material";
+
+const theme = createTheme({
+	palette: {
+		primary: {
+			main: "#EEEEEE",
+			light: "#D84040",
+		},
+	},
+});
 
 JobDescription.propTypes = {
 	index: PropTypes.number.isRequired,
@@ -26,12 +36,12 @@ const Experience = () => {
 	};
 
 	return (
-		<div>
-			<h2 className="text-2xl">// experience</h2>
+		<div className="">
+			<h2 className="text-2xl pt-20 pb-14">// experience</h2>
 			<Box
 				sx={{
 					flexGrow: 1,
-					bgcolor: "background.paper",
+					bgcolor: "",
 					display: "flex",
 					height: 500,
 				}}
@@ -43,11 +53,22 @@ const Experience = () => {
 					value={value}
 					onChange={handleChange}
 					aria-label="Vertical tabs example"
-					sx={{ borderRight: 1, borderColor: "divider" }}
+					sx={{
+						borderRight: 1,
+						borderColor: "divider",
+					}}
 				>
-          {experienceArr.map((job, index) => <Tab  label={job.location} {...a11yProps(index)} />)}
+					{experienceArr.map((job, index) => (
+						<Tab
+							label={job.location}
+							{...a11yProps(index)}
+							className="text-text"
+						/>
+					))}
 				</Tabs>
-        {experienceArr.map((job, index) => <JobDescription value={value} index={index} job={job}/>)}
+				{experienceArr.map((job, index) => (
+					<JobDescription value={value} index={index} job={job} />
+				))}
 			</Box>
 		</div>
 	);

@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+@theme {
+  --color-*: initial;
+  --color-primary: #090412;
+  --color-secondary: #200b33;
+  --color-header: #EEEEEE;
+  --color-text: #9c9c9c;
+  --color-accent: #9D66F0;
+}
+
 *{
   box-sizing: border-box;
 }
@@ -8,11 +17,49 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
+  line-height: 1.6rem;
 }
 
+.accent-color{
+  color: #9D66F0;
+}
 
+body {
+  background-color: #090412;
+}
+
+h2, a, h4{
+  color: var(--color-header)
+}
+
+p {
+  color: var(--color-text)
+}
+
+.icon-color {
+  color: #EEEEEE;
+}
+
+.primary-background {
+  background-color: #1D1616;
+}
 
 .MuiTabs-vertical {
-  align-items: self-start;
+  align-items: self-start; 
 }
 
+.MuiTabs-indicator {
+  background-color: var(--color-accent) !important;
+}
+
+.jss5 {
+  background-color: var(--color-accent) !important;
+}
+
+.MuiButtonBase-root{
+  color: var(--color-text) !important;
+}
+
+.MuiButtonBase-root:focus {
+  color: var(--color-accent) !important;
+}
