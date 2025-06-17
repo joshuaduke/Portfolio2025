@@ -42,11 +42,12 @@ h2, a, h4{
 p, li {
   color: var(--color-text);
   /* line-height: 1.8rem; */
-  font-family: 'Comic Sans MS', cursive;
+font-family: var(--font-headers);
 }
 
 h1, h2, h4 {
-  font-family: var(--font-headers);
+  
+    font-family: 'Comic Sans MS', cursive;
 }
 
 .icon-color {
