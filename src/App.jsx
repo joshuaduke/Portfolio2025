@@ -8,7 +8,7 @@ import Projects from "./features/Projects/Projects";
 
 function App() {
 	return (
-		<section className="px-8">
+		<section className="px-8 md:px-4">
 			<Navbar />
 			<Landing />
 			<About />

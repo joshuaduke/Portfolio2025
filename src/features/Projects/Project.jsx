@@ -27,7 +27,13 @@ const Project = ({ data }) => {
 			</div>
 			<h4 className="text-white font-bold text-xl pb-3">{name}</h4>
 			<p className="pb-10">{description}</p>
-			<p>{tools.map((tool) => tool + ",")}</p>
+			<p>
+				{tools.map((tool) => (
+					<span className="bg-accent p-1 mr-2 rounded-sm text-sm ">
+						{tool}
+					</span>
+				))}
+			</p>
 		</div>
 	);
 };

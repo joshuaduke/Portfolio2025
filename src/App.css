@@ -2,22 +2,29 @@
 
 @theme {
   --color-*: initial;
-  --color-primary: #090412;
-  --color-secondary: #200b33;
-  --color-header: #EEEEEE;
-  --color-text: #9c9c9c;
+  --color-primary: #0D011C;
+  --color-secondary: #2E1946;
+  --color-header: #f3e5ff;
+  /* --color-text: #EAD8FF; */
+  --color-text: #d4d4d4;
   --color-accent: #9D66F0;
+  /* --font-display: "arial", */
+  --font-headers: "Trebuchet MS", "sans-serif"
 }
 
 *{
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
-  line-height: 1.6rem;
 }
 
 .accent-color{
@@ -25,15 +32,21 @@
 }
 
 body {
-  background-color: #090412;
+  background-color: #0D011C;
 }
 
 h2, a, h4{
   color: var(--color-header)
 }
 
-p {
-  color: var(--color-text)
+p, li {
+  color: var(--color-text);
+  /* line-height: 1.8rem; */
+  font-family: 'Comic Sans MS', cursive;
+}
+
+h1, h2, h4 {
+  font-family: var(--font-headers);
 }
 
 .icon-color {

@@ -5,7 +5,9 @@ import Project from './Project';
 const Projects = () => {
 	return (
 		<div>
-			<h2 className="text-2xl pt-20 pb-14">// personal projects</h2>
+			<h2 className="text-2xl pt-20 pb-14 md:text-4xl">
+				// personal projects
+			</h2>
 
 			{/* <div id='project-card'>
             <div className='flex justify-between' id='project-header'>
@@ -20,7 +22,7 @@ const Projects = () => {
             <p>tag, tag, tag</p>
         </div> */}
 
-			<div className="grid gap-3 md:grid-cols-3">
+			<div className="grid gap-3 md:grid-cols-2 lg:grid-cols-3">
 				{projectsData.map((item) => (
 					<Project data={item} />
 				))}
@@ -35,7 +37,7 @@ const projectsData = [
 	{
 		name: "J-Finance",
 		description:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi mollitia eveniet quasi itaque enim pariatur libero atque dolores labore, unde veritatis, omnis odio impedit alias maiores, exercitationem accusantium numquam amet a ut!",
+			"Honestly, I got tired of tracking my spending in a google sheet. J-Finance is my personal finance tracker app. I can visualize spending habits, add expenses, set budgets and savings goals.",
 		tools: ["React.js", "TailwindCSS", "MongoDB", "Node.js"],
 		githubLink: "https://github.com/joshuaduke/JFinance_2025",
 		liveLink: "https://stellular-frangipane-2b6210.netlify.app/signIn",
@@ -43,7 +45,7 @@ const projectsData = [
 	{
 		name: "J-Movies",
 		description:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi mollitia eveniet quasi itaque enim pariatur libero atque dolores labore, unde veritatis, omnis odio impedit alias maiores, exercitationem ",
+			"Popular movie visualizer, see what is releasing soon and what common movies people are searching for. Might find your next watch!",
 		tools: ["React.js", "TailwindCSS", "AppWrite"],
 		githubLink: "https://github.com/joshuaduke/JMovies-2025",
 		liveLink: "https://maroon-coyote-770037.hostingersite.com/",
@@ -51,30 +53,15 @@ const projectsData = [
 	{
 		name: "Arithmetic Hero",
 		description:
-			"Excepturi modi mollitia eveniet quasi itaque enim pariatur libero atque dolores labore, unde veritatis, omnis odio impedit alias maiores, exercitationem accusantium",
-		tools: ["HTML", "JavaScript", "SCSS"],
-		githubLink: "https://github.com/joshuaduke/SuperHeroMathGameV2",
-		liveLink: "https://joshuaduke.github.io/SuperHeroMathGameV2/",
-	},
-	{
-		name: "Arithmetic Hero",
-		description:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi mollitia eveniet quasi itaque enim pariatur libero atque dolores labore, unde veritatis, omnis odio impedit alias maiores, exercitationem accusantium",
-		tools: ["HTML", "JavaScript", "SCSS"],
-		githubLink: "https://github.com/joshuaduke/SuperHeroMathGameV2",
-		liveLink: "https://joshuaduke.github.io/SuperHeroMathGameV2/",
-	},
-	{
-		name: "Arithmetic Hero",
-		description:
-			"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi modi mollitia eveniet quasi itaque enim pariatur libero atque dolores labore, unde veritatis, omnis odio impedit alias maiores, exercitationem accusantium",
+			"A fun application for children to practice their basic arithmetic skills. With their favourite heroes!",
 		tools: ["HTML", "JavaScript", "SCSS"],
 		githubLink: "https://github.com/joshuaduke/SuperHeroMathGameV2",
 		liveLink: "https://joshuaduke.github.io/SuperHeroMathGameV2/",
 	},
 	{
 		name: "RPSLS",
-		description: "Rock Paper Scissors Lizard Spock! ",
+		description:
+			"Rock Paper Scissors Lizard Spock! Rock, Paper, Scissors BUT! The version featured on The Big Bang Theory",
 		tools: ["HTML", "JavaScript", "CSS"],
 		githubLink: "https://github.com/joshuaduke/Rock-Paper-Scissors-GUI",
 		liveLink: "https://joshuaduke.github.io/Rock-Paper-Scissors-GUI/",

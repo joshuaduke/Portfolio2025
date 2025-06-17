@@ -2,10 +2,10 @@ import React from 'react'
 
 const About = () => {
   return (
-		<div>
-			<h2 className="text-2xl pt-20 pb-14">// about me</h2>
+		<div id="about">
+			<h2 className="text-2xl pt-20 pb-14 md:text-4xl">// about me</h2>
 
-			<p>
+			<p className="md:leading-8 md:text-lg">
 				I am currently a <strong>Developer</strong> at{" "}
 				<a
 					target="_blank"
@@ -22,8 +22,8 @@ const About = () => {
 				>
 					Seneca College
 				</a>
-				's <strong>Computer Programming & Analysis</strong> program. I
-				currently am undertaking a part-time{" "}
+				's <strong>Computer Programming & Analysis</strong> program. In
+				addition, I am also undertaking a part-time{" "}
 				<strong>Bachelor of Science</strong> degree in{" "}
 				<strong>Computer Science</strong> at{" "}
 				<a
@@ -36,10 +36,10 @@ const About = () => {
 				.
 			</p>
 
-			<p className="my-4">
+			<p className="my-4 md:my-8 md:text-lg">
 				Here are some technologies that I have been working with:
 			</p>
-			<ul className="text-text grid grid-cols-2 list-disc marker:text-accent px-4">
+			<ul className="text-text grid grid-cols-2 list-disc marker:text-accent px-4 md:text-lg md:leading-7">
 				<li>React.js</li>
 				<li>Javascript ES6+</li>
 				<li>Node.js</li>
@@ -48,11 +48,10 @@ const About = () => {
 				<li>MySQL</li>
 			</ul>
 
-			<p className="my-4">
-				Here are some technologies that I am currently interested in
-				learning:
+			<p className="my-4 md:my-8 md:text-lg">
+				Here are some technologies that I am currently learning:
 			</p>
-			<ul className="text-text grid grid-cols-2 list-disc marker:text-accent px-4">
+			<ul className="text-text grid grid-cols-2 list-disc marker:text-accent px-4 md:text-lg md:leading-7">
 				<li>Python</li>
 				<li>Typescript</li>
 				<li>AWS</li>
@@ -60,10 +59,10 @@ const About = () => {
 				<li>Docker</li>
 			</ul>
 
-			<p className="my-4">
-				Outside of work, I'm interested in following the developments of
-				science and technology. I also read, play a lot of video games.
-				And some sports 🏀.
+			<p className="my-4 md:leading-8 md:text-lg">
+				Outside of work, I'm continuously learning about developments in
+				science and technology. I also enjoy reading, gaming and playing
+				sports 🏀.
 			</p>
 		</div>
   );
