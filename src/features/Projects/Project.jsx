@@ -2,9 +2,16 @@ import React from 'react'
 import LabelIcon from '@mui/icons-material/Label';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { logEvent } from "firebase/analytics";
+import { analytics } from "../../config/firebase-config";
 
 const Project = ({ data }) => {
 	const { name, description, tools, githubLink, liveLink } = data;
+
+	function handleclick(event) {
+		logEvent(analytics, event.currentTarget.id);
+	}
+
 	return (
 		<div
 			id="project-card"
@@ -17,10 +24,18 @@ const Project = ({ data }) => {
 						target="_blank"
 						href={githubLink}
 						className="text-white pr-2"
+						id={`${name}_github`}
+						onClick={handleclick}
 					>
 						<GitHubIcon />
 					</a>
-					<a target="_blank" href={liveLink} className="text-white ">
+					<a
+						target="_blank"
+						href={liveLink}
+						className="text-white"
+						id={`${name}_link`}
+						onClick={handleclick}
+					>
 						<OpenInNewIcon />
 					</a>
 				</div>
