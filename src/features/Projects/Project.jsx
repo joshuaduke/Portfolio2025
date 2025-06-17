@@ -27,13 +27,13 @@ const Project = ({ data }) => {
 			</div>
 			<h4 className="text-white font-bold text-xl pb-3">{name}</h4>
 			<p className="pb-10">{description}</p>
-			<p>
+			<div className="flex flex-wrap gap-2">
 				{tools.map((tool) => (
-					<span className="bg-accent p-1 mr-2 rounded-sm text-sm ">
+					<span className="bg-accent text-text p-1 rounded-sm text-sm block w-fit ">
 						{tool}
 					</span>
 				))}
-			</p>
+			</div>
 		</div>
 	);
 };
