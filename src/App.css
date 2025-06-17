@@ -39,6 +39,10 @@ h2, a, h4{
   color: var(--color-header)
 }
 
+a:hover{
+  color: var(--color-accent)  ;
+}
+
 p, li {
   color: var(--color-text);
   /* line-height: 1.8rem; */
@@ -47,7 +51,7 @@ font-family: var(--font-headers);
 
 h1, h2, h4 {
   
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS', monospace;
 }
 
 .icon-color {

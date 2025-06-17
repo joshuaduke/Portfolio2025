@@ -13,9 +13,9 @@ const Navbar = () => {
 
 	return (
 		<nav className="w-full py-3 fixed top-0 right-0 left-0 px-6 bg-primary z-40">
-			<div className=" md:flex md:justify-between md:py-6 lg:w-[80%] lg:mx-auto">
-				<ul className="hidden md:gap-4 md:flex">
-					<li className="text-lg">Joshua Duke</li>
+			<div className=" md:flex md:justify-between md:py-6 lg:w-[80%] lg:mx-auto 2xl:w-[50%]">
+				<ul className="hidden md:gap-4 md:flex lg:text-lg">
+					<li className="text-xl">Joshua Duke</li>
 					<li>
 						<a href="#home">Home</a>
 					</li>
@@ -29,7 +29,7 @@ const Navbar = () => {
 						<a href="#projects">Projects</a>
 					</li>
 				</ul>
-				<ul className="flex justify-end gap-3 icon-color">
+				<ul className="flex justify-end gap-3 icon-color lg:text-lg">
 					<li className="">
 						<a
 							href="https://github.com/joshuaduke"
