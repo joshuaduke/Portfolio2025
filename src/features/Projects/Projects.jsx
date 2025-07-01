@@ -40,16 +40,16 @@ const projectsData = [
 			"Honestly, I got tired of tracking my spending in a google sheet. J-Finance is my personal finance tracker app. I can visualize spending habits, add expenses, set budgets and savings goals.",
 		tools: ["React.js", "TailwindCSS", "MongoDB", "Node.js"],
 		githubLink: "https://github.com/joshuaduke/JFinance_2025",
-		liveLink: "https://stellular-frangipane-2b6210.netlify.app/signIn",
+		liveLink: "https://j-finance.netlify.app/",
 	},
-	{
-		name: "J-Movies",
-		description:
-			"Popular movie visualizer, see what is releasing soon and what common movies people are searching for. Might find your next watch!",
-		tools: ["React.js", "TailwindCSS", "AppWrite"],
-		githubLink: "https://github.com/joshuaduke/JMovies-2025",
-		liveLink: "https://maroon-coyote-770037.hostingersite.com/",
-	},
+	// {
+	// 	name: "J-Movies",
+	// 	description:
+	// 		"Popular movie visualizer, see what is releasing soon and what common movies people are searching for. Might find your next watch!",
+	// 	tools: ["React.js", "TailwindCSS", "AppWrite"],
+	// 	githubLink: "https://github.com/joshuaduke/JMovies-2025",
+	// 	liveLink: "https://maroon-coyote-770037.hostingersite.com/",
+	// },
 	{
 		name: "Arithmetic Hero",
 		description:
