@@ -59,7 +59,7 @@ const Navbar = () => {
 							<EmailIcon sx={{ fontSize: 20 }} />
 						</a>
 					</li>
-					<li>
+					{/* <li>
 						<a
 							target="_blank"
 							href="/src/assets/joshuaduke_resume_2025.pdf"
@@ -68,7 +68,7 @@ const Navbar = () => {
 						>
 							Resume
 						</a>
-					</li>
+					</li> */}
 				</ul>
 			</div>
 		</nav>
